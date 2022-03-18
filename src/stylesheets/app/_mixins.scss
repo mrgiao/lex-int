@@ -1,0 +1,61 @@
+// Truncate text
+@mixin truncate-ellipsis($lines: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
+
+// Force print background color
+@mixin print-background {
+  color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+.print-background {
+  @include print-background;
+}
+
+// Drop shadow
+$shadowSize: (
+  'xl': 3,
+  'lg': 2,
+  'md': 1,
+  'sm': 0.5,
+  'xs': 0.25,
+);
+
+@each $name, $value in $shadowSize {
+  .shadow-top-#{$name} {
+      box-shadow: 0 -#{$value}rem #{$value}rem -#{$value}rem rgba(0, 0, 0, 0.175);
+  }
+
+  .shadow-bottom-#{$name} {
+      box-shadow: 0 #{$value} #{$value} -#{$value} rgba(0, 0, 0, 0.175);
+  }
+}
+
+// Text shadow
+@mixin text-shadow-md {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@mixin text-shadow-sm {
+  text-shadow: 0 0.025em 0.05em rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-md {
+  @include text-shadow-md();
+}
+
+.text-shadow-sm {
+  @include text-shadow-sm();
+}
+
+// IE fix 10-11
+@mixin iefix {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+  }
+}

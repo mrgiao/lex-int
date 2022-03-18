@@ -1,0 +1,414 @@
+@import "_custom.scss";
+// Utilities
+$utilities: map-merge(
+                $utilities,
+                (
+                  // Font size utilities
+                        "font-size":
+                        (
+                                property: font-size,
+                                class: fs,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $font-sizes,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "color": (
+                                property: color,
+                                class: text,
+                                values:
+                                map-merge(
+                                                $theme-colors,
+                                                (
+                                                        // "taf-blue-200": $taf-blue-200,
+                                                        // "taf-blue-300": $taf-blue-300,
+                                                        // "taf-blue-400": $taf-blue-400,
+                                                        // "taf-blue-500": $taf-blue-500,
+                                                        // "taf-brown-200": $taf-brown-200,
+                                                        // "taf-brown-300": $taf-brown-300,
+                                                        // "taf-brown-400": $taf-brown-400,
+                                                        // "taf-brown-500": $taf-brown-500,
+                                                        // "taf-green-200": $taf-green-200,
+                                                        // "taf-green-300": $taf-green-300,
+                                                        // "taf-green-400": $taf-green-400,
+                                                        // "taf-green-500": $taf-green-500,
+                                                        // "taf-green-600": $taf-green-600,
+                                                        // "taf-green-700": $taf-green-700,
+                                                        // "taf-orange-200": $taf-orange-200,
+                                                        // "taf-orange-300": $taf-orange-300,
+                                                        // "taf-orange-400": $taf-orange-400,
+                                                        // "taf-orange-500": $taf-orange-500,
+                                                        // "taf-orange-600": $taf-orange-600,
+                                                        // "taf-orange-700": $taf-orange-700,
+                                                        // "taf-red-200": $taf-red-200,
+                                                        // "taf-red-300": $taf-red-300,
+                                                        // "taf-red-400": $taf-red-400,
+                                                        // "taf-red-500": $taf-red-500,
+                                                        // "taf-red-600": $taf-red-600,
+                                                        // "taf-red-700": $taf-red-700,
+                                                        // "taf-yellow-200": $taf-yellow-200,
+                                                        // "taf-yellow-300": $taf-yellow-300,
+                                                        // "taf-yellow-400": $taf-yellow-400,
+                                                        // "taf-yellow-500": $taf-yellow-500,
+                                                        // "taf-white": $white,
+                                                )
+                                ),
+                        ),
+                        "bg-color": (
+                                property: background-color,
+                                class: bg,
+                                values:
+                                map-merge(
+                                                $theme-colors,
+                                                (
+                                                        // "taf-blue-200": $taf-blue-200,
+                                                        // "taf-blue-300": $taf-blue-300,
+                                                        // "taf-blue-400": $taf-blue-400,
+                                                        // "taf-blue-500": $taf-blue-500,
+                                                        // "taf-brown-200": $taf-brown-200,
+                                                        // "taf-brown-300": $taf-brown-300,
+                                                        // "taf-brown-400": $taf-brown-400,
+                                                        // "taf-brown-500": $taf-brown-500,
+                                                        // "taf-green-200": $taf-green-200,
+                                                        // "taf-green-300": $taf-green-300,
+                                                        // "taf-green-400": $taf-green-400,
+                                                        // "taf-green-500": $taf-green-500,
+                                                        // "taf-orange-200": $taf-orange-200,
+                                                        // "taf-orange-300": $taf-orange-300,
+                                                        // "taf-orange-400": $taf-orange-400,
+                                                        // "taf-orange-500": $taf-orange-500,
+                                                        // "taf-red-200": $taf-red-200,
+                                                        // "taf-red-300": $taf-red-300,
+                                                        // "taf-red-400": $taf-red-400,
+                                                        // "taf-red-500": $taf-red-500,
+                                                        // "taf-yellow-200": $taf-yellow-200,
+                                                        // "taf-yellow-300": $taf-yellow-300,
+                                                        // "taf-yellow-400": $taf-yellow-400,
+                                                        // "taf-yellow-500": $taf-yellow-500,
+                                                        // "taf-white": $white,
+                                                )
+                                ),
+                        ),
+                        "border-color": (
+                                property: border-color,
+                                class: border,
+                                values:
+                                map-merge(
+                                                $theme-colors,
+                                                (
+                                                        // "taf-blue-200": $taf-blue-200,
+                                                        // "taf-blue-300": $taf-blue-300,
+                                                        // "taf-blue-400": $taf-blue-400,
+                                                        // "taf-blue-500": $taf-blue-500,
+                                                        // "taf-brown-200": $taf-brown-200,
+                                                        // "taf-brown-300": $taf-brown-300,
+                                                        // "taf-brown-400": $taf-brown-400,
+                                                        // "taf-brown-500": $taf-brown-500,
+                                                        // "taf-green-200": $taf-green-200,
+                                                        // "taf-green-300": $taf-green-300,
+                                                        // "taf-green-400": $taf-green-400,
+                                                        // "taf-green-500": $taf-green-500,
+                                                        // "taf-orange-200": $taf-orange-200,
+                                                        // "taf-orange-300": $taf-orange-300,
+                                                        // "taf-orange-400": $taf-orange-400,
+                                                        // "taf-orange-500": $taf-orange-500,
+                                                        // "taf-red-200": $taf-red-200,
+                                                        // "taf-red-300": $taf-red-300,
+                                                        // "taf-red-400": $taf-red-400,
+                                                        // "taf-red-500": $taf-red-500,
+                                                        // "taf-yellow-200": $taf-yellow-200,
+                                                        // "taf-yellow-300": $taf-yellow-300,
+                                                        // "taf-yellow-400": $taf-yellow-400,
+                                                        // "taf-yellow-500": $taf-yellow-500,
+                                                        // "taf-white": $white,
+                                                )
+                                ),
+                        ),
+                  // Sizing width utilities
+                        "width":
+                        (
+                                property: width,
+                                class: w,
+                                responsive: true,
+                                values: (
+                                        25: 25%,
+                                        50: 50%,
+                                        75: 75%,
+                                        100: 100%,
+                                        auto: auto,
+                                ),
+                        ),
+                  // Margin utilities
+                        "margin":
+                        (
+                                property: margin,
+                                class: m,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "margin-x": (
+                                property: margin-right margin-left,
+                                class: mx,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "margin-y": (
+                                property: margin-top margin-bottom,
+                                class: my,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "margin-top": (
+                                property: margin-top,
+                                class: mt,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "margin-end": (
+                                property: margin-right,
+                                class: me,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "margin-bottom": (
+                                property: margin-bottom,
+                                class: mb,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                        "margin-start": (
+                                property: margin-left,
+                                class: ms,
+                                responsive: true,
+                                values:
+                                map-merge(
+                                                $spacers,
+                                                (
+                                                        auto: auto,
+                                                )
+                                ),
+                        ),
+                  // Negative margin utilities
+                        "negative-margin":
+                        (
+                                property: margin,
+                                class: m,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                        "negative-margin-x": (
+                                property: margin-right margin-left,
+                                class: mx,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                        "negative-margin-y": (
+                                property: margin-top margin-bottom,
+                                class: my,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                        "negative-margin-top": (
+                                property: margin-top,
+                                class: mt,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                        "negative-margin-end": (
+                                property: margin-right,
+                                class: me,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                        "negative-margin-bottom": (
+                                property: margin-bottom,
+                                class: mb,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                        "negative-margin-start": (
+                                property: margin-left,
+                                class: ms,
+                                responsive: true,
+                                values: $negative-spacers,
+                        ),
+                  // Padding utilities
+                        "padding":
+                        (
+                                property: padding,
+                                class: p,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                        "padding-x": (
+                                property: padding-right padding-left,
+                                class: px,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                        "padding-y": (
+                                property: padding-top padding-bottom,
+                                class: py,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                        "padding-top": (
+                                property: padding-top,
+                                class: pt,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                        "padding-end": (
+                                property: padding-right,
+                                class: pe,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                        "padding-bottom": (
+                                property: padding-bottom,
+                                class: pb,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                        "padding-start": (
+                                property: padding-left,
+                                class: ps,
+                                responsive: true,
+                                values: $spacers,
+                        ),
+                  // Border radius utilities
+                        "rounded":
+                        (
+                                property: border-radius,
+                                class: rounded,
+                                values: (
+                                        null: $border-radius,
+                                        0: 0,
+                                        1: $border-radius-sm,
+                                        2: $border-radius,
+                                        3: $border-radius-lg,
+                                        circle: 50%,
+                                        pill: $border-radius-pill,
+                                ),
+                        ),
+                        "rounded-top": (
+                                property: border-top-left-radius border-top-right-radius,
+                                class: rounded-top,
+                                values: (
+                                        null: $border-radius,
+                                ),
+                        ),
+                        "rounded-end": (
+                                property: border-top-right-radius border-bottom-right-radius,
+                                class: rounded-end,
+                                values: (
+                                        null: $border-radius,
+                                ),
+                        ),
+                        "rounded-bottom": (
+                                property: border-bottom-right-radius border-bottom-left-radius,
+                                class: rounded-bottom,
+                                values: (
+                                        null: $border-radius,
+                                ),
+                        ),
+                        "rounded-start": (
+                                property: border-bottom-left-radius border-top-left-radius,
+                                class: rounded-start,
+                                values: (
+                                        null: $border-radius,
+                                ),
+                        ),
+                  // Aspect ratio utilities
+                        "ar":
+                        (
+                                property: aspect-ratio,
+                                class: ar,
+                                responsive: true,
+                                values: (
+                                        auto: auto,
+                                        "1-1": 1,
+                                        "16-9": 1.77777777778,
+                                        "4-3": 1.33333333333,
+                                        "3-2": 1.5,
+                                        "2-3": 0.66666666667,
+                                ),
+                        ),
+                  // Icon utilities
+                        "icon":
+                        (
+                                property: [ width height ],
+                                class: icon,
+                                responsive: true,
+                                values: map-merge($iconSize, ()),
+                        )
+                )
+);
+
+.img-cover {
+  transform: none;
+  object-fit: cover;
+}
+ 
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.p-16-9 {
+  padding-top: 56.25%;
+}
+.bg-cover {
+  background-size: cover !important;
+}
