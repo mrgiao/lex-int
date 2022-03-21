@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="sv-se">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>UI</title>
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Welcome to company.">
-  <meta name="owner" content="Company">
-  <meta property="url" content="https://company.com">
-  <meta property="copyright" content="Company">
-  <meta property="reply-to" content="email@company.com">
-  <meta property="fb:page_id" content="">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>UI</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="Welcome to company." />
+        <meta name="owner" content="Company" />
+        <meta property="url" content="https://company.com" />
+        <meta property="copyright" content="Company" />
+        <meta property="reply-to" content="email@company.com" />
+        <meta property="fb:page_id" content="" />
 
-  <meta property="og:title" content="Company">
-  <meta property="og:description" content="Welcome to company.">
-  <meta property="og:type" content="website">
-  <meta property="og:email" content="email@company.com">
-  <meta property="og:site_name" content="Company">
-  <meta property="og:image" content="https://company.com/?rmode=crop&amp;width=1200&amp;height=628&amp;quality=90">
+        <meta property="og:title" content="Company" />
+        <meta property="og:description" content="Welcome to company." />
+        <meta property="og:type" content="website" />
+        <meta property="og:email" content="email@company.com" />
+        <meta property="og:site_name" content="Company" />
+        <meta property="og:image" content="https://company.com/?rmode=crop&amp;width=1200&amp;height=628&amp;quality=90" />
 
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
@@ -31,511 +31,437 @@
   <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#173763">
   <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico"> -->
 
-  <link rel="stylesheet" href="src/stylesheets/app.scss" />
-</head>
+        <link rel="stylesheet" href="src/stylesheets/app.scss" />
+    </head>
 
-<body>
-  <div class="site-wrapper">
-    <header class="site-header fade-in-medium">
-      <div class="container-md">
-        <div class="d-flex justify-content-between align-items-center">
+    <body>
+        <div class="site-wrapper">
+            <header class="site-header fade-in-medium">
+                <div class="container-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/" class="logo-lockup">
+                            <span class="logo-brandmark"></span>
+                            <span class="visually-hidden">Lexicon</span>
+                            <span class="logo-area">Interactive</span>
+                        </a>
 
-          <a href="/" class="logo-lockup">
-            <span class="logo-brandmark"></span>
-            <span class="visually-hidden">Lexicon</span>
-            <span class="logo-area">Interactive</span>
-          </a>
+                        <div class="nav-main-wrapper">
+                            <nav class="nav-main">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-label="Om oss">Om oss</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-label="Erbjudande">Erbjudande</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-label="Jobba hos oss">Jobba hos oss</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-label="Kontakt">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </nav>
 
-          <div class="nav-main-wrapper">
-            <nav class="nav-main">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a href="#" class="nav-link" aria-label="Om oss">Om oss</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link" aria-label="Erbjudande">Erbjudande</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link" aria-label="Jobba hos oss">Jobba hos oss</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link" aria-label="Kontakt">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
+                            <nav class="nav-tools">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <button type="button" class="btn btn-tool" data-bs-toggle="collapse" data-bs-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+                                            <svg class="icon icon-18" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M28.1641 28.707L20.9061 21.45C18.9335 23.1001 16.4429 24.0029 13.8711 24C7.80609 24 2.87109 19.065 2.87109 13C2.87109 6.935 7.80609 2 13.8711 2C19.9361 2 24.8711 6.935 24.8711 13C24.8711 15.674 23.9131 18.127 22.3211 20.035L29.5781 27.293L28.1641 28.707ZM13.8711 4C8.90909 4 4.87109 8.038 4.87109 13C4.87109 17.963 8.90909 22 13.8711 22C18.8341 22 22.8711 17.963 22.8711 13C22.8711 8.038 18.8341 4 13.8711 4Z" fill="black" />
+                                            </svg>
+                                            <span class="text-label">Sök</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="btn btn-tool" aria-label="Lexicon.se">Lexicon.se</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button type="button" id="dropdownMenuLanguage" class="btn btn-tool dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Svenska</button>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLanguage">
+                                                <li>
+                                                    <a href="#" class="dropdown-item" aria-label="Svenska">Svenska</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="dropdown-item" aria-label="English">English</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
 
-            <nav class="nav-tools">
-                <ul class="nav">
-                  <li class="nav-item">
-                      <button type="button" class="btn btn-tool" data-bs-toggle="collapse" data-bs-target="#collapseSearch"
-                      aria-expanded="false" aria-controls="collapseSearch">
-                      <svg class="icon icon-18" width="33" height="32" viewBox="0 0 33 32" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M28.1641 28.707L20.9061 21.45C18.9335 23.1001 16.4429 24.0029 13.8711 24C7.80609 24 2.87109 19.065 2.87109 13C2.87109 6.935 7.80609 2 13.8711 2C19.9361 2 24.8711 6.935 24.8711 13C24.8711 15.674 23.9131 18.127 22.3211 20.035L29.5781 27.293L28.1641 28.707ZM13.8711 4C8.90909 4 4.87109 8.038 4.87109 13C4.87109 17.963 8.90909 22 13.8711 22C18.8341 22 22.8711 17.963 22.8711 13C22.8711 8.038 18.8341 4 13.8711 4Z"
-                          fill="black" />
-                      </svg>
-                      <span class="text-label">Sök</span>
-                    </button>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#" class="btn btn-tool" aria-label="Lexicon.se">Lexicon.se</a>
-                  </li>
-                  <li class="nav-item">
-                      <div class="dropdown">
-                          <button type="button" id="dropdownMenuLanguage" class="btn btn-tool dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">Svenska</button>
-                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuAreas">
-                            <li>
-                              <a href="#" class="dropdown-item" aria-label="Svenska">Svenska</a>
-                            </li>
-                            <li>
-                              <a href="#" class="dropdown-item" aria-label="English">English</a>
-                            </li>
-                          </ul>
+                            <div class="search-wrapper collapse fade" id="collapseSearch">
+                                <div class="search-inner">
+                                    <input type="text" id="searchInput" class="form-control" placeholder="Sök på Lexicon" autofocus />
+                                    <button type="button" class="btn btn-search px-3">
+                                        <svg class="icon icon-18" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.1641 28.707L20.9061 21.45C18.9335 23.1001 16.4429 24.0029 13.8711 24C7.80609 24 2.87109 19.065 2.87109 13C2.87109 6.935 7.80609 2 13.8711 2C19.9361 2 24.8711 6.935 24.8711 13C24.8711 15.674 23.9131 18.127 22.3211 20.035L29.5781 27.293L28.1641 28.707ZM13.8711 4C8.90909 4 4.87109 8.038 4.87109 13C4.87109 17.963 8.90909 22 13.8711 22C18.8341 22 22.8711 17.963 22.8711 13C22.8711 8.038 18.8341 4 13.8711 4Z" fill="black" />
+                                        </svg>
+                                        <span class="visually-hidden">Sök</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary ms-3" data-bs-toggle="collapse" data-bs-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">Cancel</button>
+                                </div>
+                            </div>
                         </div>
-                  </li>
-                </ul>
-              </nav>
 
-            <div class="search-wrapper collapse fade" id="collapseSearch">
-              <div class="search-inner">
-                <input type="text" id="searchInput" class="form-control" placeholder="Sök på Lexicon" autofocus>
-                <button type="button" class="btn btn-search px-3">
-                  <svg class="icon icon-18" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M28.1641 28.707L20.9061 21.45C18.9335 23.1001 16.4429 24.0029 13.8711 24C7.80609 24 2.87109 19.065 2.87109 13C2.87109 6.935 7.80609 2 13.8711 2C19.9361 2 24.8711 6.935 24.8711 13C24.8711 15.674 23.9131 18.127 22.3211 20.035L29.5781 27.293L28.1641 28.707ZM13.8711 4C8.90909 4 4.87109 8.038 4.87109 13C4.87109 17.963 8.90909 22 13.8711 22C18.8341 22 22.8711 17.963 22.8711 13C22.8711 8.038 18.8341 4 13.8711 4Z" fill="black" />
-                  </svg>
-                  <span class="visually-hidden">Sök</span>
-                </button>
-                <button type="button" class="btn btn-outline-secondary ms-3" data-bs-toggle="collapse"
-                data-bs-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">Cancel</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="nav-main-backdrop js-nav-main-toggle"></div>
-          <button id="nav-toggle" class="btn-nav-main js-nav-main-toggle" aria-label="Huvudmeny">
-            <span class="btn-nav-main-inner"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main id="main-content" class="main-content">
-      <section class="hero-wrapper">
-        <div class="container-md">
-          <div class="hero overlay overlay-gradient-dark">
-            <img src="https://source.unsplash.com/random/1200x800?creative=01" class="hero-img" alt="">
-            <div class="hero-content">
-              <div class="container-md">
-                <div class="row">
-                  <div class="col-sm-8 col-md-6">
-                    <h1 class="page-title">
-                      <span class="kicker">Kicker</span>
-                      Proposition testy
-                    </h1>
-                    <p class="lead-sm">Doing what you love makes you good at it. At Lexicon we love interactive
-                      learning!
-                    </p>
-                    <div class="d-flex gap-3">
-                      <a href="#" class="btn btn-light" aria-label="Case">Case</a>
-                      <a href="#" class="btn btn-link" aria-label="Read more">Read more</a>
+                        <div class="nav-main-backdrop js-nav-main-toggle"></div>
+                        <button id="nav-toggle" class="btn-nav-main js-nav-main-toggle" aria-label="Huvudmeny">
+                            <span class="btn-nav-main-inner"></span>
+                        </button>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Breadcrumb</h1>
-          <nav aria-label="breadcrumb" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="#">Lexicon Interactive</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">Proposition</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                <span class="text-label">Customized courses</span>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Feature: Standard</h1>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
-            <article class="feature-item col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=01" class="figure-img ar-3-2"
-                  loading="lazy" alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-            <article class="feature-item col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=02" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-            <article class="feature-item col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=03" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-            <article class="feature-item col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=04" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Feature: Side</h1>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
-            <article class="feature-item feature-item-side col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=01" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-            <article class="feature-item feature-item-side col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=02" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Feature: Large</h1>
-          <div class="row row-cols-1 row-cols-md-3 justify-content-center">
-            <article class="feature-item feature-item-lg col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?interactive=01" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-            <article class="feature-item feature-item-lg col">
-              <figure class="figure">
-                <img src="https://source.unsplash.com/random/800x600?creative=02" class="figure-img" loading="lazy"
-                  alt="">
-                <figcaption class="figure-caption">An image caption</figcaption>
-              </figure>
-              <div class="feature-body">
-                <h2 class="feature-title">Creative concepts</h2>
-                <p>We help you develop your creative concepts to reach out and engage while achieving measurable
-                  results.
-                </p>
-                <p>
-                  <a href="#" class="feature-item-link">
-                    Link
-                  </a>
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Editorial</h1>
-          <article class="editorial-item">
-            <div class="row">
-              <div class="col-md-6 col-xl-5">
-                <h2>Creative concepts</h2>
-                <p class="lead">We help you develop your creative concepts to reach out and engage while achieving
-                  measurable results.</p>
-                <p>Sektionens uppgift är bland annat att inom sitt yrkesområde bedriva informationsarbete och
-                  uppsökande verksamhet. Varje sektion leds av en styrelse som väljs av dess medlemmar.</p>
-                <div class="d-flex mt-4 mt-sm-6">
-                  <a href="#" class="btn btn-dark" aria-label="Read more">Read more</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <figure class="figure">
-                  <picture>
-                    <source srcset="https://source.unsplash.com/random/650?interactive=01=650&amp;quality=70"
-                      media="(min-width: 481px)">
-                    <source srcset="https://source.unsplash.com/random/480?interactive=01=480&amp;quality=70"
-                      media="(min-width: 321px)">
-                    <source srcset="https://source.unsplash.com/random/320?interactive=01=320&amp;quality=70"
-                      media="(min-width: 1px)">
-                    <img src="https://source.unsplash.com/random/650?interactive=01=650&amp;quality=70"
-                      class="figure-img ar-1-1 ar-sm-16-9 ar-md-1-1 ar-lg-3-2" loading="lazy" alt="">
-                  </picture>
-                  <figcaption class="figure-caption">An image caption</figcaption>
-                </figure>
-              </div>
-            </article>
-          </div>
-          <div class="py-8"></div>
-          <article class="editorial-item editorial-item-reverse">
-            <div class="row">
-              <div class="col-md-6 col-xl-5">
-                <h2>Creative concepts</h2>
-                <p class="lead">We help you develop your creative concepts to reach out and engage while achieving
-                  measurable results.</p>
-                <p>Sektionens uppgift är bland annat att inom sitt yrkesområde bedriva informationsarbete och
-                  uppsökande verksamhet. Varje sektion leds av en styrelse som väljs av dess medlemmar.</p>
-                <div class="d-flex mt-4 mt-sm-6">
-                  <a href="#" class="btn btn-dark" aria-label="Read more">Read more</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <figure class="figure">
-                  <picture>
-                    <source srcset="https://source.unsplash.com/random/650?creative=02=650&amp;quality=70"
-                      media="(min-width: 481px)">
-                    <source srcset="https://source.unsplash.com/random/480?creative=02=480&amp;quality=70"
-                      media="(min-width: 321px)">
-                    <source srcset="https://source.unsplash.com/random/320?creative=02=320&amp;quality=70"
-                      media="(min-width: 1px)">
-                    <img src="https://source.unsplash.com/random/650?creative=02=650&amp;quality=70"
-                      class="figure-img ar-1-1 ar-sm-16-9 ar-md-1-1 ar-lg-3-2" loading="lazy" alt="">
-                  </picture>
-                  <figcaption class="figure-caption">An image caption</figcaption>
-                </figure>
-              </div>
-            </div>
-          </article>
-          </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Typography</h1>
-          <div class="row">
-            <div class="col">
-              <h1>h1. Heading</h1>
-              <h2>h2. Heading</h2>
-              <h3>h3. Heading</h3>
-              <h4>h4. Heading</h4>
-              <h5>h5. Heading</h5>
-              <h6>h6. Heading</h6>
-              <p class="lead">Intro. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sagittis urna, quis
-                ultricies nunc.</p>
-              <p>Body. maecenas tincidunt cursus felis, vitae volutpat enim imperdiet at. Nunc sagittis nibh eget dolor
-                efficitur pulvinar. Morbi tincidunt eleifend nisi eget ultricies. Vestibulum scelerisque, mauris quis
-                sollicitudin venenatis, nulla nisl tincidunt orci, nec mollis ex sem in diam.</p>
-              <blockquote class="blockquote">
-                <p>Block quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                </p>
-                <footer class="blockquote-footer">
-                  Source name. Someone famous
-                  <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
-              <ul>
-                <li>Lorem ipsum</li>
-                <li>Phasellus iaculis</li>
-                <li>Nulla volutpat</li>
-              </ul>
-              <ol>
-                <li>Lorem ipsum</li>
-                <li>Phasellus iaculis</li>
-                <li>Nulla volutpat</li>
-              </ol>
-              <h1>
-                <span class="kicker">Kicker</span>
-                h1. Heading
-              </h1>
-              <h2>
-                <span class="kicker">Kicker</span>
-                h2. Heading
-              </h2>
-              <h3>
-                <span class="kicker">Kicker</span>
-                h3. Heading
-              </h3>
-              <h4>
-                <span class="kicker">Kicker</span>
-                h4. Heading
-              </h4>
-              <h5>
-                <span class="kicker">Kicker</span>
-                h5. Heading
-              </h5>
-              <h6>
-                <span class="kicker">Kicker</span>
-                h6. Heading
-              </h6>
-              <span class="kicker">Kicker</span>
-              <p>Body</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Article</h1>
-          <div class="row">
-            <div class="col-lg-8">
-              <h1 class="page-title mb-5">Erbjudande</h1>
-              <p class="lead">Det man älskar att göra blir man bra på, vi på Lexicon Interactive älskar digitalt
-                lärande!</p>
-              <p>Oavsett om ni behöver kompetensutveckla era medarbetare med e-learning eller effektivisera
-                organisationens kommunikation och samarbete har vi utbildningslösningen just för er. Genom att skapa
-                engagerande utbildningar anpassade efter ert behov kan vi möjliggöra ett mer individanpassat lärande som
-                skapar varaktiga beteendeförändringar och överträffar era förväntningar. Vår användarvänliga
-                lärplattform ger er värdefulla insikter kring era medarbetares lärande, och hjälper er att utveckla en
-                god lärkultur.</p>
-              <h2 class="fw-normal">Kundanpassade utbildningar</h2>
-              <p>Arbetet med digital utbildning inleds alltid med en idé – ett behov av en förändring eller
-                förflyttning. Kanske är det en kompetens som behövs höjas bland era medarbetare? Eller en befintlig
-                utbildning som behöver effektiviseras? Hos oss är inga behov eller utmaningar för stora!</p>
-              <p>Med era kunskaps- och effektmål som grund skräddarsyr vi en utbildningslösning som passar just era
-                behov. Allt enligt en beprövad och strukturerad produktionsprocess där vi är med er hela vägen från idé
-                och uppstart till slutförande av er utbildningssatsning.</p>
-              <p>Med era kunskaps- och effektmål som grund skräddarsyr vi en utbildningslösning som passar just era
-                behov. Allt enligt en beprövad och strukturerad produktionsprocess där vi är med er hela vägen från idé
-                och uppstart till slutförande av er utbildningssatsning.
-                <p>När ni anlitar oss får ni alltid:</p>
-                <ul>
-                  <li><a href="#">Kreativa koncept</a> - vi hjälper er utforma kreativa koncept som når ut, berör,
-                    engagerar och uppnår mätbara resultat.</li>
-                  <li><a href="#">Produktion av utbildningar</a> - Vi har lång erfarenhet av att producera riktigt bra
-                    lärande som levererar enligt uppsatta mål. Vi producerar e-learning, distansutbildning, blandat
-                    lärande, film, poddar, spel, appar och test.</li>
-                  <li><a href="#">Effektmätning</a> - för att säkerställa att utbildningsprojektet levererat mot
-                    uppsatta mål avslutar vi gärna projektet med en effektmätning. Det kan handla om mål som ökad
-                    försäljning, minskade antal supportärenden, nöjdare kunder, mer engagerade medarbetare och minskade
-                    fel.</li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <hr class="my-7">
-        <div class="container-md">
-          <h1 class="doc-label">Forms</h1>
-          <div class="row">
-            <div class="col-md-8 col-xl-6">
-              <h3 class="d-flex">
-                <span>Contact me</span>
-              </h3>
-              <p class="required-info">* Required details</p>
-              <div class="mb-4 row">
-                <label for="formName" class="col-md-3 col-form-label label-sm label-required">Name</label>
-                <div class="col-md-9">
-                  <input type="text" id="formName" class="form-control" required>
-                </div>
-              </div>
-              <div class="mb-4 row">
-                <label for="formMobile" class="col-md-3 col-form-label label-sm label-required">Mobile</label>
-                <div class="col-md-9">
-                  <input type="tel" id="formMobile" class="form-control" required>
-                </div>
-              </div>
-              <div class="mb-4 row">
-                <label for="formEmail" class="col-md-3 col-form-label label-sm label-required">Email</label>
-                <div class="col-md-9">
-                  <input type="email" id="formEmail" class="form-control" required>
-                  <span class="form-text">Your email is required for logging in.</span>
-                </div>
-              </div>
-              <!-- <div class="row my-5">
+            </header>
+
+            <main id="main-content" class="main-content">
+                <section class="hero-wrapper">
+                    <div class="container-md">
+                        <div class="hero overlay overlay-gradient-dark">
+                            <img src="https://source.unsplash.com/random/1200x800?creative=01" class="hero-img" alt="" />
+                            <div class="hero-content">
+                                <div class="container-md">
+                                    <div class="row">
+                                        <div class="col-sm-8 col-md-6">
+                                            <h1 class="page-title">
+                                                <span class="kicker">Kicker</span>
+                                                Proposition
+                                            </h1>
+                                            <p class="lead-sm">Doing what you love makes you good at it. At Lexicon we love interactive learning!</p>
+                                            <div class="d-flex gap-3">
+                                                <a href="#" class="btn btn-light" aria-label="Case">Case</a>
+                                                <a href="#" class="btn btn-link" aria-label="Read more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Breadcrumb</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Lexicon Interactive</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Proposition</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <span class="text-label">Customized courses</span>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Feature: Standard</h1>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                            <article class="feature-item col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=01" class="figure-img ar-3-2" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feature-item col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=02" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feature-item col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=03" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feature-item col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=04" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Feature: Side</h1>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+                            <article class="feature-item feature-item-side col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=01" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feature-item feature-item-side col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=02" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Feature: Large</h1>
+                        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+                            <article class="feature-item feature-item-lg col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?interactive=01" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feature-item feature-item-lg col">
+                                <figure class="figure">
+                                    <img src="https://source.unsplash.com/random/800x600?creative=02" class="figure-img" loading="lazy" alt="" />
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                                <div class="feature-body">
+                                    <h2 class="feature-title">Creative concepts</h2>
+                                    <p>We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>
+                                        <a href="#" class="feature-item-link">Link</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Editorial</h1>
+                        <article class="editorial-item">
+                            <div class="row">
+                                <div class="col-md-6 col-xl-5">
+                                    <h2>Creative concepts</h2>
+                                    <p class="lead">We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                    <p>Sektionens uppgift är bland annat att inom sitt yrkesområde bedriva informationsarbete och uppsökande verksamhet. Varje sektion leds av en styrelse som väljs av dess medlemmar.</p>
+                                    <div class="d-flex mt-4 mt-sm-6">
+                                        <a href="#" class="btn btn-dark" aria-label="Read more">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="figure">
+                                        <picture>
+                                            <source srcset="https://source.unsplash.com/random/650?interactive=01=650&amp;quality=70" media="(min-width: 481px)" />
+                                            <source srcset="https://source.unsplash.com/random/480?interactive=01=480&amp;quality=70" media="(min-width: 321px)" />
+                                            <source srcset="https://source.unsplash.com/random/320?interactive=01=320&amp;quality=70" media="(min-width: 1px)" />
+                                            <img src="https://source.unsplash.com/random/650?interactive=01=650&amp;quality=70" class="figure-img ar-1-1 ar-sm-16-9 ar-md-1-1 ar-lg-3-2" loading="lazy" alt="" />
+                                        </picture>
+                                        <figcaption class="figure-caption">An image caption</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="py-8"></div>
+                    <article class="editorial-item editorial-item-reverse">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-5">
+                                <h2>Creative concepts</h2>
+                                <p class="lead">We help you develop your creative concepts to reach out and engage while achieving measurable results.</p>
+                                <p>Sektionens uppgift är bland annat att inom sitt yrkesområde bedriva informationsarbete och uppsökande verksamhet. Varje sektion leds av en styrelse som väljs av dess medlemmar.</p>
+                                <div class="d-flex mt-4 mt-sm-6">
+                                    <a href="#" class="btn btn-dark" aria-label="Read more">Read more</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure">
+                                    <picture>
+                                        <source srcset="https://source.unsplash.com/random/650?creative=02=650&amp;quality=70" media="(min-width: 481px)" />
+                                        <source srcset="https://source.unsplash.com/random/480?creative=02=480&amp;quality=70" media="(min-width: 321px)" />
+                                        <source srcset="https://source.unsplash.com/random/320?creative=02=320&amp;quality=70" media="(min-width: 1px)" />
+                                        <img src="https://source.unsplash.com/random/650?creative=02=650&amp;quality=70" class="figure-img ar-1-1 ar-sm-16-9 ar-md-1-1 ar-lg-3-2" loading="lazy" alt="" />
+                                    </picture>
+                                    <figcaption class="figure-caption">An image caption</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Typography</h1>
+                        <div class="row">
+                            <div class="col">
+                                <h1>h1. Heading</h1>
+                                <h2>h2. Heading</h2>
+                                <h3>h3. Heading</h3>
+                                <h4>h4. Heading</h4>
+                                <h5>h5. Heading</h5>
+                                <h6>h6. Heading</h6>
+                                <p class="lead">Intro. lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sagittis urna, quis ultricies nunc.</p>
+                                <p>Body. maecenas tincidunt cursus felis, vitae volutpat enim imperdiet at. Nunc sagittis nibh eget dolor efficitur pulvinar. Morbi tincidunt eleifend nisi eget ultricies. Vestibulum scelerisque, mauris quis sollicitudin venenatis, nulla nisl tincidunt orci, nec mollis ex sem in diam.</p>
+                                <blockquote class="blockquote">
+                                    <p>Block quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">
+                                        Source name. Someone famous
+                                        <cite title="Source Title">Source Title</cite>
+                                    </footer>
+                                </blockquote>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li>Phasellus iaculis</li>
+                                    <li>Nulla volutpat</li>
+                                </ul>
+                                <ol>
+                                    <li>Lorem ipsum</li>
+                                    <li>Phasellus iaculis</li>
+                                    <li>Nulla volutpat</li>
+                                </ol>
+                                <h1>
+                                    <span class="kicker">Kicker</span>
+                                    h1. Heading
+                                </h1>
+                                <h2>
+                                    <span class="kicker">Kicker</span>
+                                    h2. Heading
+                                </h2>
+                                <h3>
+                                    <span class="kicker">Kicker</span>
+                                    h3. Heading
+                                </h3>
+                                <h4>
+                                    <span class="kicker">Kicker</span>
+                                    h4. Heading
+                                </h4>
+                                <h5>
+                                    <span class="kicker">Kicker</span>
+                                    h5. Heading
+                                </h5>
+                                <h6>
+                                    <span class="kicker">Kicker</span>
+                                    h6. Heading
+                                </h6>
+                                <span class="kicker">Kicker</span>
+                                <p>Body</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Article</h1>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h1 class="page-title mb-5">Erbjudande</h1>
+                                <p class="lead">Det man älskar att göra blir man bra på, vi på Lexicon Interactive älskar digitalt lärande!</p>
+                                <p>Oavsett om ni behöver kompetensutveckla era medarbetare med e-learning eller effektivisera organisationens kommunikation och samarbete har vi utbildningslösningen just för er. Genom att skapa engagerande utbildningar anpassade efter ert behov kan vi möjliggöra ett mer individanpassat lärande som skapar varaktiga beteendeförändringar och överträffar era förväntningar. Vår användarvänliga lärplattform ger er värdefulla insikter kring era medarbetares lärande, och hjälper er att utveckla en god lärkultur.</p>
+                                <h2 class="fw-normal">Kundanpassade utbildningar</h2>
+                                <p>Arbetet med digital utbildning inleds alltid med en idé – ett behov av en förändring eller förflyttning. Kanske är det en kompetens som behövs höjas bland era medarbetare? Eller en befintlig utbildning som behöver effektiviseras? Hos oss är inga behov eller utmaningar för stora!</p>
+                                <p>Med era kunskaps- och effektmål som grund skräddarsyr vi en utbildningslösning som passar just era behov. Allt enligt en beprövad och strukturerad produktionsprocess där vi är med er hela vägen från idé och uppstart till slutförande av er utbildningssatsning.</p>
+                                <p>Med era kunskaps- och effektmål som grund skräddarsyr vi en utbildningslösning som passar just era behov. Allt enligt en beprövad och strukturerad produktionsprocess där vi är med er hela vägen från idé och uppstart till slutförande av er utbildningssatsning.</p>
+                                <p>När ni anlitar oss får ni alltid:</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">Kreativa koncept</a>
+                                        - vi hjälper er utforma kreativa koncept som når ut, berör, engagerar och uppnår mätbara resultat.
+                                    </li>
+                                    <li>
+                                        <a href="#">Produktion av utbildningar</a>
+                                        - Vi har lång erfarenhet av att producera riktigt bra lärande som levererar enligt uppsatta mål. Vi producerar e-learning, distansutbildning, blandat lärande, film, poddar, spel, appar och test.
+                                    </li>
+                                    <li>
+                                        <a href="#">Effektmätning</a>
+                                        - för att säkerställa att utbildningsprojektet levererat mot uppsatta mål avslutar vi gärna projektet med en effektmätning. Det kan handla om mål som ökad försäljning, minskade antal supportärenden, nöjdare kunder, mer engagerade medarbetare och minskade fel.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr class="my-7" />
+                    <div class="container-md">
+                        <h1 class="doc-label">Forms</h1>
+                        <div class="row">
+                            <div class="col-md-8 col-xl-6">
+                                <h3 class="d-flex">
+                                    <span>Contact me</span>
+                                </h3>
+                                <p class="required-info">* Required details</p>
+                                <div class="mb-4 row">
+                                    <label for="formName" class="col-md-3 col-form-label label-sm label-required">Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="formName" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="mb-4 row">
+                                    <label for="formMobile" class="col-md-3 col-form-label label-sm label-required">Mobile</label>
+                                    <div class="col-md-9">
+                                        <input type="tel" id="formMobile" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="mb-4 row">
+                                    <label for="formEmail" class="col-md-3 col-form-label label-sm label-required">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="email" id="formEmail" class="form-control" required />
+                                        <span class="form-text">Your email is required for logging in.</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="row my-5">
                 <div class="col-md-9 offset-md-3">
                   <label class="custom-input">
                     <input type="radio" id="demoRadio1" name="demoRadio">
@@ -547,193 +473,189 @@
                   </label>
                 </div>
               </div> -->
-              <div class="row my-5">
-                <div class="col-md-9 offset-md-3">
-                  <label class="custom-input">
-                    <input type="checkbox" id="demoCheck" name="demoCheck">
-                    <span class="custom-input-label">
-                      I agree to the
-                      <a href="#">terms of service</a>.
-                    </span>
-                  </label>
+                                <div class="row my-5">
+                                    <div class="col-md-9 offset-md-3">
+                                        <label class="custom-input">
+                                            <input type="checkbox" id="demoCheck" name="demoCheck" />
+                                            <span class="custom-input-label">
+                                                I agree to the
+                                                <a href="#">terms of service</a>
+                                                .
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row my-7">
+                                    <div class="col-md-9 offset-md-3">
+                                        <button type="button" class="btn btn-dark">Contact me</button>
+                                        <button type="button" class="btn btn-medium">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap gap-3 mt-5">
+                            <button type="button" class="btn btn-light btn-lg">Large</button>
+                            <button type="button" class="btn btn-light">Medium</button>
+                            <button type="button" class="btn btn-light btn-sm">Small</button>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3 mt-5">
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-success">Succcess</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3 mt-5">
+                            <button type="button" class="btn btn-outline-primary">Primary outline</button>
+                            <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
+                            <button type="button" class="btn btn-outline-light">Light outline</button>
+                            <button type="button" class="btn btn-outline-dark">Dark outline</button>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3 mt-5">
+                            <button type="button" class="btn btn-primary btn-lg">Call to action</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-5">
+                            <p class="mb-7">Lexicon Interactive är en del av Lexicon gruppen.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <nav class="nav nav-footer flex-column">
+                                <div class="nav-footer-heading">Lexicon</div>
+                                <a href="#" class="nav-link" aria-label="Lexicon">Lexicon</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon Interactive">Lexicon Interactive</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon Digitalisering">Lexicon Digitalisering</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon University">Lexicon University</a>
+                            </nav>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <nav class="nav nav-footer flex-column">
+                                <div class="nav-footer-heading">Utbildning</div>
+                                <a href="#" class="nav-link" aria-label="Lexicon IT-användare">Lexicon IT-användare</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon IT-Proffs">Lexicon IT-Proffs</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon Affärsutbildning">Lexicon Affärsutbildning</a>
+                            </nav>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <nav class="nav nav-footer flex-column">
+                                <div class="nav-footer-heading">Yrkesutbildning</div>
+                                <a href="#" class="nav-link" aria-label="Lexicon Yrkeshögskola">Lexicon Yrkeshögskola</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon Arbetsmarknad">Lexicon Arbetsmarknad</a>
+                            </nav>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                            <nav class="nav nav-footer flex-column">
+                                <div class="nav-footer-heading">Konsulttjänster</div>
+                                <a href="#" class="nav-link" aria-label="Lexicon IT-Solutions">Lexicon IT-Solutions</a>
+                                <a href="#" class="nav-link" aria-label="Lexicon IT-konsult">Lexicon IT-konsult</a>
+                            </nav>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 offset-lg-2">
+                            <div class="nav-footer-heading">Huvudkontor</div>
+                            <div class="fs-7">
+                                <p>
+                                    Klarabergsviadukten 70,
+                                    <br />
+                                    Box 863, 101&nbsp;37
+                                    <br />
+                                    STOCKHOLM
+                                </p>
+                                <p>
+                                    <a href="mailto:info@lexicon.se" aria-label="e-post">info@lexicon.se</a>
+                                    <br />
+                                    Tel:
+                                    <a href="tel:0856610700" class="text-nowrap" aria-label="telefonnummmer">08-566 107 00</a>
+                                    <br />
+                                    Fax:
+                                    <a href="tel:0856610701" class="text-nowrap" aria-label="faxnummmer">08-566 107 01</a>
+                                </p>
+                                <p>&copy; Lexicon AB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="nav nav-footer nav-footer-general">
+                        <a href="#" class="nav-link" aria-label="Om Lexicon">Om Lexicon</a>
+                        <a href="#" class="nav-link" aria-label="Presscenter">Presscenter</a>
+                        <a href="#" class="nav-link" aria-label="Kontakta oss">Kontakta oss</a>
+                        <a href="#" class="nav-link" aria-label="Användarvillkor">Användarvillkor</a>
+                        <a href="#" class="nav-link" aria-label="Om cookies">Om cookies</a>
+                        <a href="#" class="nav-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1433_1062)">
+                                    <path d="M16.102 3.99805H16.28C17.924 4.00405 26.254 4.06405 28.5 4.66805C29.179 4.85238 29.7977 5.21169 30.2943 5.71006C30.7909 6.20843 31.1481 6.82841 31.33 7.50805C31.532 8.26805 31.674 9.27405 31.77 10.312L31.79 10.52L31.834 11.04L31.85 11.248C31.98 13.076 31.996 14.788 31.998 15.162V15.312C31.996 15.7 31.978 17.528 31.834 19.432L31.818 19.642L31.8 19.85C31.7 20.994 31.552 22.13 31.33 22.966C31.1486 23.646 30.7917 24.2662 30.295 24.7647C29.7983 25.2631 29.1793 25.6223 28.5 25.806C26.18 26.43 17.362 26.474 16.14 26.476H15.856C15.238 26.476 12.682 26.464 10.002 26.372L9.662 26.36L9.488 26.352L9.146 26.338L8.804 26.324C6.584 26.226 4.47 26.068 3.496 25.804C2.81698 25.6204 2.19813 25.2616 1.70145 24.7635C1.20477 24.2654 0.847694 23.6456 0.666 22.966C0.444 22.132 0.296 20.994 0.196 19.85L0.18 19.64L0.164 19.432C0.0652952 18.0768 0.0105997 16.7188 0 15.36L0 15.114C0.004 14.684 0.02 13.198 0.128 11.558L0.142 11.352L0.148 11.248L0.164 11.04L0.208 10.52L0.228 10.312C0.324 9.27405 0.466 8.26605 0.668 7.50805C0.849387 6.82814 1.20632 6.20787 1.70303 5.70941C2.19973 5.21095 2.81874 4.85183 3.498 4.66805C4.472 4.40805 6.586 4.24805 8.806 4.14805L9.146 4.13405L9.49 4.12205L9.662 4.11605L10.004 4.10205C11.9074 4.0408 13.8116 4.00679 15.716 4.00005H16.102V3.99805ZM12.8 10.418V20.054L21.114 15.238L12.8 10.418Z" fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1433_1062">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="visually-hidden">YouTube</span>
+                        </a>
+                        <a href="#" class="nav-link" aria-label="LinkeIn">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 2.292C0 1.026 1.052 0 2.35 0H29.65C30.948 0 32 1.026 32 2.292V29.708C32 30.974 30.948 32 29.65 32H2.35C1.052 32 0 30.974 0 29.708V2.292ZM9.886 26.788V12.338H5.084V26.788H9.886ZM7.486 10.364C9.16 10.364 10.202 9.256 10.202 7.868C10.172 6.45 9.162 5.372 7.518 5.372C5.874 5.372 4.8 6.452 4.8 7.868C4.8 9.256 5.842 10.364 7.454 10.364H7.486ZM17.302 26.788V18.718C17.302 18.286 17.334 17.854 17.462 17.546C17.808 16.684 18.598 15.79 19.926 15.79C21.664 15.79 22.358 17.114 22.358 19.058V26.788H27.16V18.5C27.16 14.06 24.792 11.996 21.632 11.996C19.084 11.996 17.942 13.396 17.302 14.382V14.432H17.27C17.2806 14.4153 17.2913 14.3986 17.302 14.382V12.338H12.502C12.562 13.694 12.502 26.788 12.502 26.788H17.302Z" fill="black" />
+                            </svg>
+                            <span class="visually-hidden">LinkeIn</span>
+                        </a>
+                        <a href="#" class="nav-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1433_1061)">
+                                    <path d="M32 16.098C32 7.20605 24.836 -0.00195312 16 -0.00195312C7.15997 4.68751e-05 -0.00402832 7.20605 -0.00402832 16.1C-0.00402832 24.134 5.84797 30.794 13.496 32.002V20.752H9.43597V16.1H13.5V12.55C13.5 8.51605 15.89 6.28805 19.544 6.28805C21.296 6.28805 23.126 6.60205 23.126 6.60205V10.562H21.108C19.122 10.562 18.502 11.804 18.502 13.078V16.098H22.938L22.23 20.75H18.5V32C26.148 30.792 32 24.132 32 16.098Z" fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1433_1061">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </nav>
                 </div>
-              </div>
-              <div class="row my-7">
-                <div class="col-md-9 offset-md-3">
-                  <button type="button" class="btn btn-dark">Contact me</button>
-                  <button type="button" class="btn btn-medium">Cancel</button>
-                </div>
-              </div>
+            </footer>
+        </div>
+
+        <div class="message-cookies js-message-cookies fade-in-medium" style="display: block">
+            <p>
+                Vi använder cookies för att förbättra användbarheten på vår webbplats och för att tillhandahålla våra tjänster. Om du vill veta mer, läs om vårt
+                <a href="#" class="text-white">integritetsarbete</a>
+                och
+                <a href="#" class="text-white">cookie policy</a>
+                .
+            </p>
+            <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light js-btn-cookies">OK</button>
+                <button type="button" class="btn btn-outline-light">Mer info</button>
             </div>
-          </div>
-          <div class="d-flex align-items-center flex-wrap gap-3 mt-5">
-            <button type="button" class="btn btn-light btn-lg">Large</button>
-            <button type="button" class="btn btn-light">Medium</button>
-            <button type="button" class="btn btn-light btn-sm">Small</button>
-          </div>
-          <div class="d-flex flex-wrap gap-3 mt-5">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-success">Succcess</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-            <button type="button" class="btn btn-link">Link</button>
-          </div>
-          <div class="d-flex flex-wrap gap-3 mt-5">
-            <button type="button" class="btn btn-outline-primary">Primary outline</button>
-            <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
-            <button type="button" class="btn btn-outline-light">Light outline</button>
-            <button type="button" class="btn btn-outline-dark">Dark outline</button>
-          </div>
-          <div class="d-flex flex-wrap gap-3 mt-5">
-            <button type="button" class="btn btn-primary btn-lg">Call to action</button>
-          </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container-md">
-        <div class="row">
-          <div class="col-md-8 col-lg-5">
-            <p class="mb-7">Lexicon Interactive är en del av Lexicon gruppen.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <nav class="nav nav-footer flex-column">
-              <div class="nav-footer-heading">Lexicon</div>
-              <a href="#" class="nav-link" aria-label="Lexicon">Lexicon</a>
-              <a href="#" class="nav-link" aria-label="Lexicon Interactive">Lexicon Interactive</a>
-              <a href="#" class="nav-link" aria-label="Lexicon Digitalisering">Lexicon Digitalisering</a>
-              <a href="#" class="nav-link" aria-label="Lexicon University">Lexicon University</a>
-            </nav>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <nav class="nav nav-footer flex-column">
-              <div class="nav-footer-heading">Utbildning</div>
-              <a href="#" class="nav-link" aria-label="Lexicon IT-användare">Lexicon IT-användare</a>
-              <a href="#" class="nav-link" aria-label="Lexicon IT-Proffs">Lexicon IT-Proffs</a>
-              <a href="#" class="nav-link" aria-label="Lexicon Affärsutbildning">Lexicon Affärsutbildning</a>
-            </nav>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <nav class="nav nav-footer flex-column">
-              <div class="nav-footer-heading">Yrkesutbildning</div>
-              <a href="#" class="nav-link" aria-label="Lexicon Yrkeshögskola">Lexicon Yrkeshögskola</a>
-              <a href="#" class="nav-link" aria-label="Lexicon Arbetsmarknad">Lexicon Arbetsmarknad</a>
-            </nav>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <nav class="nav nav-footer flex-column">
-              <div class="nav-footer-heading">Konsulttjänster</div>
-              <a href="#" class="nav-link" aria-label="Lexicon IT-Solutions">Lexicon IT-Solutions</a>
-              <a href="#" class="nav-link" aria-label="Lexicon IT-konsult">Lexicon IT-konsult</a>
-            </nav>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 offset-lg-2">
-            <div class="nav-footer-heading">Huvudkontor</div>
-            <div class="fs-7">
-              <p>
-                Klarabergsviadukten 70,<br />
-                Box 863, 101&nbsp;37<br />
-                STOCKHOLM
-              </p>
-              <p>
-                <a href="mailto:info@lexicon.se" aria-label="info@lexicon.se"
-                  aria-label="e-post">info@lexicon.se</a><br />
-                Tel: <a href="tel:0856610700" class="text-nowrap" aria-label="telefonnummmer">08-566 107 00</a><br />
-                Fax: <a href="tel:0856610701" class="text-nowrap" aria-label="faxnummmer">08-566 107 01</a>
-              </p>
-              <p>
-                &copy; Lexicon AB
-              </p>
-            </div>
-          </div>
-        </div>
-        <nav class="nav nav-footer nav-footer-general">
-          <a href="#" class="nav-link" aria-label="Om Lexicon">Om Lexicon</a>
-          <a href="#" class="nav-link" aria-label="Presscenter">Presscenter</a>
-          <a href="#" class="nav-link" aria-label="Kontakta oss">Kontakta oss</a>
-          <a href="#" class="nav-link" aria-label="Användarvillkor">Användarvillkor</a>
-          <a href="#" class="nav-link" aria-label="Om cookies">Om cookies</a>
-          <a href="#" class="nav-link" aria-label="YouTube">
-            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1433_1062)">
-                <path
-                  d="M16.102 3.99805H16.28C17.924 4.00405 26.254 4.06405 28.5 4.66805C29.179 4.85238 29.7977 5.21169 30.2943 5.71006C30.7909 6.20843 31.1481 6.82841 31.33 7.50805C31.532 8.26805 31.674 9.27405 31.77 10.312L31.79 10.52L31.834 11.04L31.85 11.248C31.98 13.076 31.996 14.788 31.998 15.162V15.312C31.996 15.7 31.978 17.528 31.834 19.432L31.818 19.642L31.8 19.85C31.7 20.994 31.552 22.13 31.33 22.966C31.1486 23.646 30.7917 24.2662 30.295 24.7647C29.7983 25.2631 29.1793 25.6223 28.5 25.806C26.18 26.43 17.362 26.474 16.14 26.476H15.856C15.238 26.476 12.682 26.464 10.002 26.372L9.662 26.36L9.488 26.352L9.146 26.338L8.804 26.324C6.584 26.226 4.47 26.068 3.496 25.804C2.81698 25.6204 2.19813 25.2616 1.70145 24.7635C1.20477 24.2654 0.847694 23.6456 0.666 22.966C0.444 22.132 0.296 20.994 0.196 19.85L0.18 19.64L0.164 19.432C0.0652952 18.0768 0.0105997 16.7188 0 15.36L0 15.114C0.004 14.684 0.02 13.198 0.128 11.558L0.142 11.352L0.148 11.248L0.164 11.04L0.208 10.52L0.228 10.312C0.324 9.27405 0.466 8.26605 0.668 7.50805C0.849387 6.82814 1.20632 6.20787 1.70303 5.70941C2.19973 5.21095 2.81874 4.85183 3.498 4.66805C4.472 4.40805 6.586 4.24805 8.806 4.14805L9.146 4.13405L9.49 4.12205L9.662 4.11605L10.004 4.10205C11.9074 4.0408 13.8116 4.00679 15.716 4.00005H16.102V3.99805ZM12.8 10.418V20.054L21.114 15.238L12.8 10.418Z"
-                  fill="black" />
-              </g>
-              <defs>
-                <clipPath id="clip0_1433_1062">
-                  <rect width="32" height="32" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <span class="visually-hidden">YouTube</span>
-          </a>
-          <a href="#" class="nav-link" aria-label="LinkeIn">
-            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 2.292C0 1.026 1.052 0 2.35 0H29.65C30.948 0 32 1.026 32 2.292V29.708C32 30.974 30.948 32 29.65 32H2.35C1.052 32 0 30.974 0 29.708V2.292ZM9.886 26.788V12.338H5.084V26.788H9.886ZM7.486 10.364C9.16 10.364 10.202 9.256 10.202 7.868C10.172 6.45 9.162 5.372 7.518 5.372C5.874 5.372 4.8 6.452 4.8 7.868C4.8 9.256 5.842 10.364 7.454 10.364H7.486ZM17.302 26.788V18.718C17.302 18.286 17.334 17.854 17.462 17.546C17.808 16.684 18.598 15.79 19.926 15.79C21.664 15.79 22.358 17.114 22.358 19.058V26.788H27.16V18.5C27.16 14.06 24.792 11.996 21.632 11.996C19.084 11.996 17.942 13.396 17.302 14.382V14.432H17.27C17.2806 14.4153 17.2913 14.3986 17.302 14.382V12.338H12.502C12.562 13.694 12.502 26.788 12.502 26.788H17.302Z"
-                fill="black" />
-            </svg>
-            <span class="visually-hidden">LinkeIn</span>
-          </a>
-          <a href="#" class="nav-link" aria-label="Facebook">
-            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1433_1061)">
-                <path
-                  d="M32 16.098C32 7.20605 24.836 -0.00195312 16 -0.00195312C7.15997 4.68751e-05 -0.00402832 7.20605 -0.00402832 16.1C-0.00402832 24.134 5.84797 30.794 13.496 32.002V20.752H9.43597V16.1H13.5V12.55C13.5 8.51605 15.89 6.28805 19.544 6.28805C21.296 6.28805 23.126 6.60205 23.126 6.60205V10.562H21.108C19.122 10.562 18.502 11.804 18.502 13.078V16.098H22.938L22.23 20.75H18.5V32C26.148 30.792 32 24.132 32 16.098Z"
-                  fill="black" />
-              </g>
-              <defs>
-                <clipPath id="clip0_1433_1061">
-                  <rect width="32" height="32" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </nav>
-      </div>
-    </footer>
-  </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            var id = document.getElementById('nav-toggle');
 
-  <div class="message-cookies js-message-cookies fade-in-medium" style="display: block">
-    <p>
-      Vi använder cookies för att förbättra användbarheten på vår webbplats och för att tillhandahålla våra tjänster. Om
-      du vill veta mer, läs om vårt
-      <a href="#" class="text-white">integritetsarbete</a>
-      och
-      <a href="#" class="text-white">cookie policy</a>
-      .
-    </p>
-    <div class="d-flex gap-3">
-      <button type="button" class="btn btn-light js-btn-cookies">OK</button>
-      <button type="button" class="btn btn-outline-light">Mer info</button>
-    </div>
-  </div>
+            function toggle(el, classname) {
+                if (el.classList.contains(classname)) {
+                    el.classList.remove(classname);
+                    document.body.classList.remove('is-nav-main-active');
+                } else {
+                    el.classList.add(classname);
+                    document.body.classList.add('is-nav-main-active');
+                }
+            }
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script>
-      var id = document.getElementById("nav-toggle");
-
-      function toggle(el, classname) {
-        if (el.classList.contains(classname)) {
-          el.classList.remove(classname);
-          document.body.classList.remove('is-nav-main-active');
-        } else {
-          el.classList.add(classname);
-          document.body.classList.add('is-nav-main-active');
-        }
-      }
-
-      id.addEventListener("click", (e) => {
-        toggle(e.target, "red");
-      });
-    </script>
-</body>
+            id.addEventListener('click', (e) => {
+                toggle(e.target, 'red');
+            });
+        </script>
+    </body>
 </html>
