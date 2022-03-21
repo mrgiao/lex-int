@@ -1036,16 +1036,20 @@ OPTIONS:
 - .editorial-item-reverse: img left, text right
 */
 .editorial-item {
-  > .row {
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 2rem;
+  > [class^="container"] {
+    > .row {
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 2rem;
+    }
   }
 }
 
 .editorial-item-reverse {
-  > .row {
-    flex-direction: row-reverse;
+  > [class^="container"] {
+    > .row {
+      flex-direction: row-reverse;
+    }
   }
 }
 
