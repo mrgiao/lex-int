@@ -41,6 +41,12 @@
   <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico"> -->
 
     <link rel="stylesheet" href="src/stylesheets/app.scss" />
+    <style>
+      /* Temp: hide link to codesandbox */
+      iframe {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -180,7 +186,7 @@
               </div>
             </div>
 
-            <div class="nav-main-backdrop js-nav-main-toggle"></div>
+            <!-- <div class="nav-main-backdrop js-nav-main-toggle"></div> -->
             <button
               id="nav-toggle"
               class="btn-nav-main js-nav-main-toggle"
@@ -252,7 +258,7 @@
           <div class="container-md">
             <h1 class="doc-label">Feature: Standard</h1>
             <div
-              class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center"
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center" style="row-gap: 2rem;"
             >
               <article class="feature-item col">
                 <figure class="figure">
@@ -354,7 +360,7 @@
           <div class="container-md">
             <h1 class="doc-label">Feature: Side</h1>
             <div
-              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center"
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center" style="row-gap: 2rem;"
             >
               <article class="feature-item feature-item-side col">
                 <figure class="figure">
@@ -409,7 +415,7 @@
           <hr class="my-7" />
           <div class="container-md">
             <h1 class="doc-label">Feature: Large</h1>
-            <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center" style="row-gap: 2rem;">
               <article class="feature-item feature-item-lg col">
                 <figure class="figure">
                   <img
@@ -464,7 +470,7 @@
           <div class="container-md">
             <h1 class="doc-label">Editorial</h1>
           </div>
-          <article class="editorial-item py-10 bg-light">
+          <article class="editorial-item">
               <div class="container-md">
               <div class="row">
                 <div class="col-md-6 col-xl-5">
@@ -521,7 +527,7 @@
             </article>
           </div>
           <div class="py-8"></div>
-          <article class="editorial-item editorial-item-reverse py-10 bg-light">
+          <article class="editorial-item editorial-item-reverse py-10 bg-warning">
             <div class="container-md">
               <div class="row">
                 <div class="col-md-6 col-xl-5">
@@ -775,9 +781,7 @@
                       class="form-control"
                       required
                     />
-                    <span class="form-text"
-                      >Your email is required for logging in.</span
-                    >
+                    <!-- <span class="form-text">Your email is required for logging in.</span> -->
                   </div>
                 </div>
                 <!-- <div class="row my-5">
@@ -809,12 +813,12 @@
                     <button type="button" class="btn btn-dark">
                       Contact me
                     </button>
-                    <button type="button" class="btn btn-medium">Cancel</button>
+                    <!-- <button type="button" class="btn btn-medium">Cancel</button> -->
                   </div>
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center flex-wrap gap-3 mt-5">
+            <!-- <div class="d-flex align-items-center flex-wrap gap-3 mt-5">
               <button type="button" class="btn btn-light btn-lg">Large</button>
               <button type="button" class="btn btn-light">Medium</button>
               <button type="button" class="btn btn-light btn-sm">Small</button>
@@ -846,7 +850,7 @@
               <button type="button" class="btn btn-primary btn-lg">
                 Call to action
               </button>
-            </div>
+            </div> -->
           </div>
         </section>
       </main>
@@ -860,7 +864,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="row-gap: 2rem;">
             <div class="col-sm-6 col-md-4 col-lg-2">
               <nav class="nav nav-footer flex-column">
                 <div class="nav-footer-heading">Lexicon</div>
@@ -1027,7 +1031,7 @@
     </div>
 
     <div
-      class="message-cookies js-message-cookies fade-in-medium"
+      class="message-cookies js-message-cookies fade-in-medium d-none"
       style="display: block;"
     >
       <p>
