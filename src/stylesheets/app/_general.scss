@@ -161,7 +161,7 @@ OPTIONS:
 
 // Nav
 .nav-main-wrapper {
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     padding: $spacer-3;
     flex-direction: column;
     // visibility: hidden;
@@ -189,7 +189,7 @@ OPTIONS:
     left: 0;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     margin-top: $spacer-2;
     display: flex;
     flex-grow: 1;
@@ -227,7 +227,7 @@ OPTIONS:
   .nav {
     flex-direction: column;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       flex-direction: row;
     }
   }
@@ -289,7 +289,7 @@ OPTIONS:
   border-radius: 100%;
   transition: 0.2s opacity;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     display: none;
   }
 
